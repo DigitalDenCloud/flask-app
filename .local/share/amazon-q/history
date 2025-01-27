@@ -551,3 +551,135 @@
   session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
   cwd: /home/cloudshell-user
   time: 1737997013
+- command: git add .
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997017
+- command: git remote add origin https://github.com/DigitalDenCloud/flask-app.git
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997314
+- command: git push                                                                                    fatal: The current branch master has no upstream branch.                                                                                                  To push the current branch and set the remote as upstream, use                                                                                                                                                                                                                                                          git push --set-upstream origin master                                                                                                                                                                                                                                                                           To have this happen automatically for branches without a tracking                                                                                         upstream, see 'push.autoSetupRemote' in 'git help config'.
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997321
+- command: git push --set-upstream origin master                                                       Username for 'https://github.com': Deniz Yilmaz                                                                                                           Password for 'https://Deniz%20Yilmaz@github.com':                                                                                                         remote: Support for password authentication was removed on August 13, 2021.                                                                               remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.                                                                                                                 fatal: Authentication failed for 'https://github.com/DigitalDenCloud/flask-app.git/'
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997436
+- command: user.name=Deniz Yilmaz                                                                                                                                    user.email=denizyilmaz@hotmail.co.uk                                                                                                                      core.repositoryformatversion=0                                                                                                                            core.filemode=true                                                                                                                                        core.bare=false                                                                                                                                           core.logallrefupdates=true                                                                                                                                remote.origin.url=https://github.com/DigitalDenCloud/flask-app.git                                                                                        remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997445
+- command: git push --set-upstream origin master                                                       Username for 'https://github.com': Deniz Yilmaz                                                                                                           Password for 'https://Deniz%20Yilmaz@github.com':                                                                                                         Enumerating objects: 1766, done.                                                                                                                          Counting objects: 100% (1766/1766), done.                                                                                                                 Delta compression using up to 2 threads                                                                                                                   Compressing objects: 100% (1679/1679), done.                                                                                                              Writing objects: 100% (1766/1766), 5.58 MiB | 4.46 MiB/s, done.                                                                                           Total 1766 (delta 113), reused 0 (delta 0), pack-reused 0 (from 0)                                                                                        remote: Resolving deltas: 100% (113/113), done.                                                                                                           To https://github.com/DigitalDenCloud/flask-app.git                                                                                                        * [new branch]      master -> master                                                                                                                     branch 'master' set up to track 'origin/master'.
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997467
+- command: nano buildspec.yml
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997642
+- command: cat buildspec.yml                                                                           version: 0.2                                                                                                                                                                                                                                                                                                        phases:                                                                                                                                                     install:                                                                                                                                                    commands:                                                                                                                                                   - echo Installing dependencies...                                                                                                                         - pip install -r requirements.txt                                                                                                                     build:                                                                                                                                                      commands:                                                                                                                                                   - echo Running tests...                                                                                                                                   - python -m unittest discover -s tests                                                                                                              artifacts:                                                                                                                                                  files:                                                                                                                                                      - application.py                                                                                                                                          - requirements.txt                                                                                                                                        - cron.yaml
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737997649
+- command: ls                                                                                                            application.py  buildspec.yml  cron.yaml  requirements.txt  venv
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998121
+- command: git add buildspec.yml
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998182
+- command: git commit -m \"Added buildspec file\"                                                        [master 4cc1aed] Added buildspec file                                                                                                                      1 file changed, 17 insertions(+)                                                                                                                          create mode 100644 buildspec.yml
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998183
+- command: git push                                                                                    Username for 'https://github.com': Deniz Yilmaz                                                                                                           Password for 'https://Deniz%20Yilmaz@github.com':                                                                                                         Enumerating objects: 4, done.                                                                                                                             Counting objects: 100% (4/4), done.                                                                                                                       Delta compression using up to 2 threads                                                                                                                   Compressing objects: 100% (3/3), done.                                                                                                                    Writing objects: 100% (3/3), 458 bytes | 458.00 KiB/s, done.                                                                                              Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)                                                                                             remote: Resolving deltas: 100% (1/1), completed with 1 local object.                                                                                      To https://github.com/DigitalDenCloud/flask-app.git                                                                                                          74dd292..4cc1aed  master -> master
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998196
+- command: touch tests/test_sample.py                                                                  touch: cannot touch 'tests/test_sample.py': No such file or directory
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998418
+- command: mkdir tests
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998432
+- command: touch tests/test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998433
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998459
+- command: git add tests/
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998469
+- command: git commit -m \"Added tests directory with sample test\"                                      [master 9032635] Added tests directory with sample test                                                                                                    1 file changed, 0 insertions(+), 0 deletions(-)                                                                                                           create mode 100644 tests/test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998469
+- command: git push origin master                                                                      Username for 'https://github.com': Deniz Yilmaz                                                                                                           Password for 'https://Deniz%20Yilmaz@github.com':                                                                                                         Enumerating objects: 5, done.                                                                                                                             Counting objects: 100% (5/5), done.                                                                                                                       Delta compression using up to 2 threads                                                                                                                   Compressing objects: 100% (2/2), done.                                                                                                                    Writing objects: 100% (4/4), 342 bytes | 342.00 KiB/s, done.                                                                                              Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)                                                                                             remote: Resolving deltas: 100% (1/1), completed with 1 local object.                                                                                      To https://github.com/DigitalDenCloud/flask-app.git                                                                                                          4cc1aed..9032635  master -> master
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998483
+- command: nano buildspec.yml
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998503
+- command: y
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998944
+- command: git commit -m \"Updated sample test\"                                                         On branch master                                                                                                                                          Your branch is up to date with 'origin/master'.                                                                                                                                                                                                                                                                     Changes not staged for commit:                                                                                                                              (use \"git add <file>...\" to update what will be committed)                                                                                                (use \"git restore <file>...\" to discard changes in working directory)                                                                                   \t       modified:   .local/share/amazon-q/data.sqlite3                                                                                                    \t       modified:   .local/share/amazon-q/history                                                                                                                                                                                                                                                                   Untracked files:                                                                                                                                            (use \"git add <file>...\" to include in what will be committed)                                                                                          \t       test_sample.py                                                                                                                                                                                                                                                                                              no changes added to commit (use \"git add\" and/or \"git commit -a\")
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998967
