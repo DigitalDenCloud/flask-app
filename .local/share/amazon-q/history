@@ -683,3 +683,327 @@
   session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
   cwd: /home/cloudshell-user
   time: 1737998967
+- command: git add .
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998973
+- command: git commit -m \"Updated sample test\"                                                         [master d6a3f0b] Updated sample test                                                                                                                       3 files changed, 151 insertions(+), 1 deletion(-)                                                                                                         create mode 100644 test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998976
+- command: git push                                                                                    Username for 'https://github.com': Deniz Yilmaz                                                                                                           Password for 'https://Deniz%20Yilmaz@github.com':                                                                                                         Enumerating objects: 14, done.                                                                                                                            Counting objects: 100% (14/14), done.                                                                                                                     Delta compression using up to 2 threads                                                                                                                   Compressing objects: 100% (6/6), done.                                                                                                                    Writing objects: 100% (8/8), 4.77 KiB | 1.19 MiB/s, done.                                                                                                 Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)                                                                                             remote: Resolving deltas: 100% (3/3), completed with 3 local objects.                                                                                     To https://github.com/DigitalDenCloud/flask-app.git                                                                                                          9032635..d6a3f0b  master -> master
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737998991
+- command: python -m unittest discover tests                                                                                                                                                                                                                     ----------------------------------------------------------------------                                                                                    Ran 0 tests in 0.000s                                                                                                                                                                                                                                                                                               OK
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999091
+- command: ls                                                                                          application.py  buildspec.yml  cron.yaml  requirements.txt  tests  test_sample.py  venv
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999096
+- command: cat tests                                                                                   cat: tests: Is a directory
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999103
+- command: cd tests
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999142
+- command: ls                                                                                __pycache__  test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999143
+- command: cat test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999150
+- command: cat test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999162
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999201
+- command: cat test_sample.py                                                                import unittest                                                                                                                                           from application import application  # Assuming application.py contains your Flask app                                                                                                                                                                                                                              class TestFlaskApp(unittest.TestCase):                                                                                                                        def setUp(self):                                                                                                                                              self.app = application.test_client()  # Get a Flask test client                                                                                           self.app.testing = True                                                                                                                                                                                                                                                                                         def test_home(self):                                                                                                                                          response = self.app.get('/')                                                                                                                              self.assertEqual(response.status_code, 200)  # Ensure the home page is available                                                                                                                                                                                                                                def test_hello(self):                                                                                                                                         response = self.app.get('/John')  # Assuming your app has a dynamic route like /<username>                                                                self.assertIn(b'Hello John!', response.data)  # Check if the response contains the expected greeting                                                                                                                                                                                                        if __name__ == '__main__':                                                                                                                                    unittest.main()
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999203
+- command: git add .
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999209
+- command: git commit -m \"Updated sample test\"                                               [master e47dc9a] Updated sample test                                                                                                                       2 files changed, 19 insertions(+)                                                                                                                         create mode 100644 tests/__pycache__/test_sample.cpython-39.pyc
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999215
+- command: git push                                                                          Username for 'https://github.com': Deniz Yilmaz                                                                                                           Password for 'https://Deniz%20Yilmaz@github.com':                                                                                                         Enumerating objects: 9, done.                                                                                                                             Counting objects: 100% (9/9), done.                                                                                                                       Delta compression using up to 2 threads                                                                                                                   Compressing objects: 100% (6/6), done.                                                                                                                    Writing objects: 100% (6/6), 877 bytes | 877.00 KiB/s, done.                                                                                              Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)                                                                                             remote: Resolving deltas: 100% (1/1), completed with 1 local object.                                                                                      To https://github.com/DigitalDenCloud/flask-app.git                                                                                                          d6a3f0b..e47dc9a  master -> master
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999228
+- command: cat application.py                                                                cat: application.py: No such file or directory
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999313
+- command: pwd                                                                               /home/cloudshell-user/tests
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999319
+- command: cd ..
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999321
+- command: pwd                                                                                         /home/cloudshell-user
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999322
+- command: ls                                                                                          application.py  buildspec.yml  cron.yaml  requirements.txt  tests  test_sample.py  venv
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999324
+- command: ls                                                                                          application.py  buildspec.yml  cron.yaml  requirements.txt  tests  test_sample.py  venv
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999410
+- command: cd tests
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999413
+- command: ls                                                                                __pycache__  test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999419
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999496
+- command: python -m unittest discover                                                       E                                                                                                                                                         ======================================================================                                                                                    ERROR: test_sample (unittest.loader._FailedTest)                                                                                                          ----------------------------------------------------------------------                                                                                    ImportError: Failed to import test module: test_sample                                                                                                    Traceback (most recent call last):                                                                                                                          File \"/usr/lib64/python3.9/unittest/loader.py\", line 436, in _find_test_path                                                                                module = self._get_module_from_name(name)                                                                                                               File \"/usr/lib64/python3.9/unittest/loader.py\", line 377, in _get_module_from_name                                                                          __import__(name)                                                                                                                                        File \"/home/cloudshell-user/tests/test_sample.py\", line 2, in <module>                                                                                      from application import application  # Import your application instance                                                                               ModuleNotFoundError: No module named 'application'                                                                                                                                                                                                                                                                                                                                                                                                                            ----------------------------------------------------------------------                                                                                    Ran 1 test in 0.000s                                                                                                                                                                                                                                                                                                FAILED (errors=1)
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999500
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999574
+- command: python -m unittest discover                                                       E                                                                                                                                                         ======================================================================                                                                                    ERROR: test_sample (unittest.loader._FailedTest)                                                                                                          ----------------------------------------------------------------------                                                                                    ImportError: Failed to import test module: test_sample                                                                                                    Traceback (most recent call last):                                                                                                                          File \"/usr/lib64/python3.9/unittest/loader.py\", line 436, in _find_test_path                                                                                module = self._get_module_from_name(name)                                                                                                               File \"/usr/lib64/python3.9/unittest/loader.py\", line 377, in _get_module_from_name                                                                          __import__(name)                                                                                                                                        File \"/home/cloudshell-user/tests/test_sample.py\", line 2, in <module>                                                                                      from ..application import application  # Import your application instance                                                                             ImportError: attempted relative import with no known parent package                                                                                                                                                                                                                                                                                                                                                                                                           ----------------------------------------------------------------------                                                                                    Ran 1 test in 0.000s                                                                                                                                                                                                                                                                                                FAILED (errors=1)
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999576
+- command: python -m unittest discover                                                       E                                                                                                                                                         ======================================================================                                                                                    ERROR: test_sample (unittest.loader._FailedTest)                                                                                                          ----------------------------------------------------------------------                                                                                    ImportError: Failed to import test module: test_sample                                                                                                    Traceback (most recent call last):                                                                                                                          File \"/usr/lib64/python3.9/unittest/loader.py\", line 436, in _find_test_path                                                                                module = self._get_module_from_name(name)                                                                                                               File \"/usr/lib64/python3.9/unittest/loader.py\", line 377, in _get_module_from_name                                                                          __import__(name)                                                                                                                                        File \"/home/cloudshell-user/tests/test_sample.py\", line 2, in <module>                                                                                      from ..application import application  # Import your application instance                                                                             ImportError: attempted relative import with no known parent package                                                                                                                                                                                                                                                                                                                                                                                                           ----------------------------------------------------------------------                                                                                    Ran 1 test in 0.000s                                                                                                                                                                                                                                                                                                FAILED (errors=1)
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999598
+- command: cd ..
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999678
+- command: ls                                                                                          application.py  buildspec.yml  cron.yaml  requirements.txt  tests  test_sample.py  venv
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999679
+- command: cd tests
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999688
+- command: ls                                                                                __pycache__  test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999690
+- command: cd tests                                                                          bash: cd: tests: No such file or directory
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999738
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999760
+- command: pwd                                                                               /home/cloudshell-user/tests
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999911
+- command: ls                                                                                __pycache__  test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999914
+- command: mv tests/test_sample.py .                                                         mv: cannot stat 'tests/test_sample.py': No such file or directory
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999917
+- command: ls                                                                                __pycache__  test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999919
+- command: mv test_sample.py ..
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999958
+- command: rmdir tests                                                                       rmdir: failed to remove 'tests': No such file or directory
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user/tests
+  time: 1737999964
+- command: cd ..
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999969
+- command: ls                                                                                          application.py  buildspec.yml  cron.yaml  requirements.txt  tests  test_sample.py  venv
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999970
+- command: rm tests                                                                                    rm: cannot remove 'tests': Is a directory
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999974
+- command: rmdir tests                                                                                 rmdir: failed to remove 'tests': Directory not empty
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999982
+- command: python -m unittest test_sample.py                                                           E                                                                                                                                                         ======================================================================                                                                                    ERROR: test_sample (unittest.loader._FailedTest)                                                                                                          ----------------------------------------------------------------------                                                                                    ImportError: Failed to import test module: test_sample                                                                                                    Traceback (most recent call last):                                                                                                                          File \"/usr/lib64/python3.9/unittest/loader.py\", line 154, in loadTestsFromName                                                                              module = __import__(module_name)                                                                                                                        File \"/home/cloudshell-user/test_sample.py\", line 2, in <module>                                                                                            from ..application import application  # Import your application instance                                                                             ImportError: attempted relative import with no known parent package                                                                                                                                                                                                                                                                                                                                                                                                           ----------------------------------------------------------------------                                                                                    Ran 1 test in 0.000s                                                                                                                                                                                                                                                                                                FAILED (errors=1)
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1737999996
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000015
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000020
+- command: python -m unittest test_sample.py                                                           EE                                                                                                                                                        ======================================================================                                                                                    ERROR: test_home (test_sample.TestFlaskApp)                                                                                                               ----------------------------------------------------------------------                                                                                    Traceback (most recent call last):                                                                                                                          File \"/home/cloudshell-user/test_sample.py\", line 8, in setUp                                                                                               self.app = application.test_client()                                                                                                                  AttributeError: 'function' object has no attribute 'test_client'                                                                                                                                                                                                                                                    ======================================================================                                                                                    ERROR: test_post_request (test_sample.TestFlaskApp)                                                                                                       ----------------------------------------------------------------------                                                                                    Traceback (most recent call last):                                                                                                                          File \"/home/cloudshell-user/test_sample.py\", line 8, in setUp                                                                                               self.app = application.test_client()                                                                                                                  AttributeError: 'function' object has no attribute 'test_client'                                                                                                                                                                                                                                                    ----------------------------------------------------------------------                                                                                    Ran 2 tests in 0.001s                                                                                                                                                                                                                                                                                               FAILED (errors=2)
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000022
+- command: python -m unittest test_sample.py                                                           EE                                                                                                                                                        ======================================================================                                                                                    ERROR: test_home (test_sample.TestFlaskApp)                                                                                                               ----------------------------------------------------------------------                                                                                    Traceback (most recent call last):                                                                                                                          File \"/home/cloudshell-user/test_sample.py\", line 8, in setUp                                                                                               self.app = application.test_client()                                                                                                                  AttributeError: 'function' object has no attribute 'test_client'                                                                                                                                                                                                                                                    ======================================================================                                                                                    ERROR: test_post_request (test_sample.TestFlaskApp)                                                                                                       ----------------------------------------------------------------------                                                                                    Traceback (most recent call last):                                                                                                                          File \"/home/cloudshell-user/test_sample.py\", line 8, in setUp                                                                                               self.app = application.test_client()                                                                                                                  AttributeError: 'function' object has no attribute 'test_client'                                                                                                                                                                                                                                                    ----------------------------------------------------------------------                                                                                    Ran 2 tests in 0.001s                                                                                                                                                                                                                                                                                               FAILED (errors=2)
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000029
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000233
+- command: rm test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000239
+- command: nano test_sample.py
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000246
+- command: python -m unittest test_sample.py                                                           .                                                                                                                                                         ----------------------------------------------------------------------                                                                                    Ran 1 test in 0.000s                                                                                                                                                                                                                                                                                                OK
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000249
+- command: git add.                                                                                    git: 'add.' is not a git command. See 'git --help'.                                                                                                                                                                                                                                                                 The most similar command is                                                                                                                               \t       add
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738000299
