@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - echo Running tests...
+      - python -m unittest discover -s tests
+artifacts:
+  files:
+    - application.py
+    - requirements.txt
+    - cron.yaml
+
