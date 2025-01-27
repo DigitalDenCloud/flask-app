@@ -1025,3 +1025,21 @@
   session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
   cwd: /home/cloudshell-user
   time: 1738000317
+- command: git add .
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738002169
+- command: git commit -m \"test pipeline\"                                                               [master 7ecaa6c] test pipeline                                                                                                                             3 files changed, 20 insertions(+), 2 deletions(-)
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738002181
+- command: git push                                                                                    Username for 'https://github.com': Deniz Yilmaz                                                                                                           Password for 'https://Deniz%20Yilmaz@github.com':                                                                                                         Enumerating objects: 15, done.                                                                                                                            Counting objects: 100% (15/15), done.                                                                                                                     Delta compression using up to 2 threads                                                                                                                   Compressing objects: 100% (6/6), done.                                                                                                                    Writing objects: 100% (8/8), 1.35 KiB | 1.35 MiB/s, done.                                                                                                 Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)                                                                                             remote: Resolving deltas: 100% (4/4), completed with 4 local objects.                                                                                     To https://github.com/DigitalDenCloud/flask-app.git                                                                                                          03ede4e..7ecaa6c  master -> master
+  exit_code: 0
+  shell: bash
+  session_id: 77e3bf8b21134ebcb1053d183e7c5f0d
+  cwd: /home/cloudshell-user
+  time: 1738002332
